@@ -39,9 +39,12 @@ namespace HappyHourParser
                 else if (message == "/subscribe")
                 {
                     if (Config.GetConfig().TelegramUserIDs.Contains(userid))
+                    {
                         await tBot.SendTextMessageAsync(
                             userid,
                             "Вы уже подписаны!");
+                        return;
+                    }
                     Config.GetConfig().TelegramUserIDs.Add(userid);
                     Config.Save();
                     await tBot.SendTextMessageAsync(
