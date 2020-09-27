@@ -1,2 +1,2 @@
-https://t.me/ZakaHappyHourParserBot
-https://zaka-zaka.com/happyhour/
+# https://t.me/ZakaHappyHourParserBot
+# https://zaka-zaka.com/happyhour/
